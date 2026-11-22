@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="caviar-gold">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChromaFolks & Co — Modern Creative Studio | Apps & Social Media</title>
+  <meta name="description" content="ChromaFolks & Co is a modern, minimalist designing & creative studio engineering high-impact apps and magnetic social media for forward-thinking businesses.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="bird-light.png">
+  
+  <!-- Google Fonts: Space Grotesk & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-announcement" aria-label="Studio status">
+    <div class="container top-bar-content">
+      <div class="announcement-pill">
+        <span class="status-dot"></span>
+        <span class="announcement-text"><strong>Q1 / Q2 Booking Open:</strong> Accepting 2 select Mobile App & Social Growth sprints</span>
+      </div>
+      <div class="palette-quick-trigger">
+        <span class="quick-label">⚡ Active Palette:</span>
+        <button id="quick-palette-name" class="quick-palette-btn" title="Click to open Color Lab">
+          <span class="palette-indicator-dot"></span>
+          <span id="active-palette-label">Caviar &amp; Champagne Gold</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-identity" aria-label="ChromaFolks & Co Home">
+        <div class="brand-logo-wrap">
+          <img src="logo-light.png" alt="ChromaFolks & Co Logo" class="brand-logo-img dark-theme-logo">
+          <img src="logo-dark.png" alt="ChromaFolks & Co Logo" class="brand-logo-img light-theme-logo">
+        </div>
+        <div class="brand-name-group">
+          <span class="brand-name">ChromaFolks</span>
+          <span class="brand-sub">&amp; Co Studio</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#work" class="nav-link">Selected Work</a>
+        <a href="#palette-lab" class="nav-link highlight-link">
+          <span class="chroma-badge-pill">Lab</span> Color Palettes
+        </a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#pricing" class="nav-link">Packages</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="header-actions">
+        <!-- Palette Switcher Menu Dropdown -->
+        <div class="theme-dropdown-wrapper">
+          <button class="theme-switch-btn" id="themeDropdownBtn" aria-label="Change brand color palette" aria-expanded="false">
+            <svg class="palette-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+              <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+              <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+              <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+              <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+            </svg>
+            <span class="btn-theme-text">Theme</span>
+          </button>
+          
+          <div class="theme-dropdown-menu" id="themeDropdownMenu">
+            <div class="dropdown-section-title">👑 Prestige &amp; Luxury Agency</div>
+            <button class="theme-opt-btn active" data-set-theme="caviar-gold">
+              <span class="opt-swatch" style="background: linear-gradient(135deg, #faebd7, #e5c07b, #b8860b);"></span>
+              <div class="opt-text">
+                <span class="opt-name">Caviar &amp; Champagne Gold</span>
+                <span class="opt-desc">Executive Luxury &bull; Obsidian + Brushed Gold</span>
+              </div>
+            </button>
+            <button class="theme-opt-btn" data-set-theme="imperial-emerald">
+              <span class="opt-swatch" style="background: linear-gradient(135deg, #00e599, #059669);"></span>
+              <div class="opt-text">
+                <span class="opt-name">Imperial Emerald &amp; Onyx</span>
+                <span class="opt-desc">Prestige Tech &bull; Radiant Jade + Onyx</span>
+              </div>
+            </button>
+            <button class="theme-opt-btn" data-set-theme="titanium-stealth">
+              <span class="opt-swatch" style="background: linear-gradient(135deg, #ffffff, #71717a);"></span>
+              <div class="opt-text">
+                <span class="opt-name">Titanium Stealth &amp; Silver</span>
+                <span class="opt-desc">Monolith Studio &bull; Liquid Platinum + Carbon</span>
+              </div>
+            </button>
+            <button class="theme-opt-btn" data-set-theme="kyoto-sapphire">
+              <span class="opt-swatch" style="background: linear-gradient(135deg, #60a5fa, #1d4ed8);"></span>
+              <div class="opt-text">
+                <span class="opt-name">Kyoto Sapphire &amp; Navy</span>
+                <span class="opt-desc">Architectural Elite &bull; Royal Ink + Sapphire</span>
+              </div>
+            </button>
+
+            <div class="dropdown-section-title">⚡ Creative &amp; Kinetic Studio</div>
+            <button class="theme-opt-btn" data-set-theme="electric-chroma">
+              <span class="opt-swatch" style="background: linear-gradient(135deg, #6366f1, #00f5a0);"></span>
+              <div class="opt-text">
+                <span class="opt-name">Electric Chroma</span>
+                <span class="opt-desc">Studio Signature &bull; Neon Violet + Mint</span>
+              </div>
+            </button>
+            <button class="theme-opt-btn" data-set-theme="acid-minimalist">
+              <span class="opt-swatch" style="background: linear-gradient(135deg, #d2ff00, #2563eb);"></span>
+              <div class="opt-text">
+                <span class="opt-name">Acid Minimalist</span>
+                <span class="opt-desc">Bold Gen-Z &bull; Electric Citron + Black</span>
+              </div>
+            </button>
+            <button class="theme-opt-btn" data-set-theme="sunset-mirage">
+              <span class="opt-swatch" style="background: linear-gradient(135deg, #ff6b6b, #c084fc);"></span>
+              <div class="opt-text">
+                <span class="opt-name">Sunset Mirage</span>
+                <span class="opt-desc">Creator Warmth &bull; Peach + Cosmic Violet</span>
+              </div>
+            </button>
+            <button class="theme-opt-btn" data-set-theme="nordic-editorial">
+              <span class="opt-swatch" style="background: linear-gradient(135deg, #4f46e5, #0284c7); border: 1px solid #ccc;"></span>
+              <div class="opt-text">
+                <span class="opt-name">Nordic Editorial</span>
+                <span class="opt-desc">Clean Light &bull; Alabaster + Ink Studio</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary btn-sm header-cta">
+          <span>Start a Project</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Flyout -->
+    <div class="mobile-nav-flyout" id="mobileNavFlyout">
+      <div class="mobile-nav-inner">
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#work" class="mobile-nav-link">Selected Work</a>
+        <a href="#palette-lab" class="mobile-nav-link">Color Palettes Lab</a>
+        <a href="#process" class="mobile-nav-link">Our Process</a>
+        <a href="#pricing" class="mobile-nav-link">Pricing &amp; Packages</a>
+        <a href="#about" class="mobile-nav-link">About Studio</a>
+        <a href="#contact" class="btn btn-primary w-full mt-4">Start a Project</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ==============================================
+         HERO SECTION
+         ============================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-pill-badge">
+            <span class="bird-mini-icon">
+              <img src="bird-light.png" alt="" class="dark-theme-logo">
+              <img src="bird-dark.png" alt="" class="light-theme-logo">
+            </span>
+            <span>CREATIVE STUDIO FOR THE DIGITAL GENERATION</span>
+          </div>
+
+          <h1 class="hero-title">
+            Where iconic <span class="text-gradient">Apps</span> meet magnetic <span class="text-gradient-alt">Socials</span>.
+          </h1>
+
+          <p class="hero-description">
+            <strong>ChromaFolks &amp; Co</strong> is a modern, minimalist design &amp; creative studio. 
+            We build intuitive, high-conversion mobile &amp; web apps, and architect scroll-stopping social media ecosystems for forward-thinking businesses and young founders.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <span>Book a Discovery Sprint</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+            </a>
+            <a href="#work" class="btn btn-secondary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Explore Selected Work</span>
+            </a>
+          </div>
+
+          <div class="hero-metrics-strip">
+            <div class="metric-card">
+              <span class="metric-value">4.9★</span>
+              <span class="metric-label">Avg. App Store Rating</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-value">180M+</span>
+              <span class="metric-label">Organic Social Views</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-value">14 Days</span>
+              <span class="metric-label">Fast MVP Sprint Delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Hero Showcase -->
+        <div class="hero-visual-showcase">
+          <div class="mockup-duo-wrapper">
+            
+            <!-- Phone Mockup: Apps Pillar -->
+            <div class="phone-mockup-frame glass-panel">
+              <div class="phone-notch">
+                <span class="notch-camera"></span>
+                <span class="notch-speaker"></span>
+              </div>
+              <div class="phone-screen-content">
+                <div class="app-screen-header">
+                  <div>
+                    <span class="app-screen-tag">PROTOTYPE PREVIEW</span>
+                    <h3 class="app-screen-title">Horizon Pay</h3>
+                  </div>
+                  <span class="app-chip-live">LIVE</span>
+                </div>
+                
+                <div class="app-balance-card">
+                  <div class="bal-label">Total Portfolio</div>
+                  <div class="bal-amount">$84,390.20 <span class="bal-growth">+18.4%</span></div>
+                  <div class="mini-sparkline">
+                    <svg viewBox="0 0 100 25" class="sparkline-svg">
+                      <path d="M0,20 Q20,22 35,12 T70,10 T100,2" fill="none" stroke="var(--accent-primary)" stroke-width="3" stroke-linecap="round"/>
+                      <path d="M0,20 Q20,22 35,12 T70,10 T100,2 L100,25 L0,25 Z" fill="var(--accent-glow)" opacity="0.2"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="app-quick-actions">
+                  <button class="quick-pill active">Transfer</button>
+                  <button class="quick-pill">Analytics</button>
+                  <button class="quick-pill">Invest</button>
+                </div>
+
+                <div class="app-feature-list">
+                  <div class="app-item">
+                    <div class="item-icon-box">⚡</div>
+                    <div class="item-info">
+                      <div class="item-title">Instant Payout</div>
+                      <div class="item-sub">Completed &bull; 2s ago</div>
+                    </div>
+                    <div class="item-val">+$1,450</div>
+                  </div>
+                  <div class="item-item-subtext">Designed by ChromaFolks iOS Squad</div>
+                </div>
+              </div>
+              <div class="phone-home-indicator"></div>
+            </div>
+
+            <!-- Social Media Floating Card -->
+            <div class="social-reel-card glass-panel floating-card">
+              <div class="reel-header">
+                <div class="reel-creator">
+                  <div class="creator-avatar">CF</div>
+                  <div>
+                    <div class="creator-name">@chromafolks</div>
+                    <div class="creator-badge">Viral Content Engine</div>
+                  </div>
+                </div>
+                <span class="reel-trending">🔥 TRENDING</span>
+              </div>
+
+              <div class="reel-media-placeholder">
+                <div class="reel-visual-art">
+                  <div class="pulsing-orbit"></div>
+                  <div class="reel-tagline">“Make Brands Look Impossible to Ignore”</div>
+                </div>
+                <div class="reel-overlay-metrics">
+                  <div class="stat-pill"><span class="icon">👁️</span> 2.4M</div>
+                  <div class="stat-pill"><span class="icon">❤️</span> 184K</div>
+                  <div class="stat-pill"><span class="icon">💬</span> 8.9K</div>
+                </div>
+              </div>
+
+              <div class="reel-caption-snippet">
+                <strong>Reels &amp; TikTok Curation:</strong> Dynamic motion hooks, tailored audio timing, and aesthetic color grading designed for Gen-Z retention.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         MARQUEE BANNER
+         ============================================== -->
+    <section class="marquee-section" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>MOBILE APP DESIGN (iOS &amp; ANDROID)</span>
+          <span class="marquee-star">✦</span>
+          <span>TIKTOK &amp; REELS SOCIAL STRATEGY</span>
+          <span class="marquee-star">✦</span>
+          <span>FIGMA COMPONENT LIBRARIES</span>
+          <span class="marquee-star">✦</span>
+          <span>HIGH-CONVERSION WEB APPS</span>
+          <span class="marquee-star">✦</span>
+          <span>BRAND AESTHETICS &amp; GRID CURATION</span>
+          <span class="marquee-star">✦</span>
+          <span>GEN-Z &amp; FOUNDER RESONANCE</span>
+          <span class="marquee-star">✦</span>
+          <span>INTERACTIVE PROTOTYPES</span>
+          <span class="marquee-star">✦</span>
+        </div>
+        <div class="marquee-content">
+          <span>MOBILE APP DESIGN (iOS &amp; ANDROID)</span>
+          <span class="marquee-star">✦</span>
+          <span>TIKTOK &amp; REELS SOCIAL STRATEGY</span>
+          <span class="marquee-star">✦</span>
+          <span>FIGMA COMPONENT LIBRARIES</span>
+          <span class="marquee-star">✦</span>
+          <span>HIGH-CONVERSION WEB APPS</span>
+          <span class="marquee-star">✦</span>
+          <span>BRAND AESTHETICS &amp; GRID CURATION</span>
+          <span class="marquee-star">✦</span>
+          <span>GEN-Z &amp; FOUNDER RESONANCE</span>
+          <span class="marquee-star">✦</span>
+          <span>INTERACTIVE PROTOTYPES</span>
+          <span class="marquee-star">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         INTERACTIVE COLOR PALETTES LAB (Core Request)
+         ============================================== -->
+    <section class="section palette-lab-section" id="palette-lab">
+      <div class="container">
+        
+        <div class="section-badge-center">
+          <span class="badge-icon">🎨</span>
+          <span>BRAND IDENTITY &amp; CHROMATIC SPECTRUM</span>
+        </div>
+        
+        <h2 class="section-title text-center">
+          Bespoke Color Identity Suites. <br>
+          <span class="text-gradient">From High-Ticket Luxury to Kinetic Culture.</span>
+        </h2>
+        
+        <p class="section-sub text-center max-w-2xl">
+          Based on the <strong>ChromaFolks &amp; Co</strong> bird emblem and modern minimalist ethos, we formulated eight production-grade color systems. 
+          Click on any palette card below to <strong>live-test the entire website</strong> in that theme, or copy hex codes directly for your Figma board.
+        </p>
+
+        <!-- Palette Selector Tabs / Cards Grid -->
+        <div class="palette-grid">
+          
+          <!-- Palette 1: Caviar & Champagne Gold (Ultra-Luxury Flagship) -->
+          <div class="palette-card glass-panel" data-palette="caviar-gold">
+            <div class="palette-card-header">
+              <div>
+                <span class="palette-tag gold-tag">👑 ULTRA-LUXURY &bull; EXECUTIVE</span>
+                <h3 class="palette-title">Caviar &amp; Champagne Gold</h3>
+              </div>
+              <button class="palette-apply-btn" data-set-theme="caviar-gold">Activate Theme</button>
+            </div>
+            
+            <p class="palette-purpose">
+              Velvet caviar black layered with brushed champagne gold and silk ivory. The hallmark of elite global design agencies handling venture-backed flagships and luxury digital products.
+            </p>
+
+            <div class="swatches-strip">
+              <div class="swatch-item" style="background: #070709;" data-hex="#070709" title="Caviar Noir (#070709)">
+                <span class="swatch-code">#070709</span>
+              </div>
+              <div class="swatch-item" style="background: #181820;" data-hex="#181820" title="Dark Slate (#181820)">
+                <span class="swatch-code">#181820</span>
+              </div>
+              <div class="swatch-item" style="background: #e5c07b; color: #000;" data-hex="#E5C07B" title="Champagne Gold (#E5C07B)">
+                <span class="swatch-code">#E5C07B</span>
+              </div>
+              <div class="swatch-item" style="background: #dfc18a; color: #000;" data-hex="#DFC18A" title="Brushed Brass (#DFC18A)">
+                <span class="swatch-code">#DFC18A</span>
+              </div>
+              <div class="swatch-item" style="background: #fdfcf9; color: #000;" data-hex="#FDFCF9" title="Silk Ivory (#FDFCF9)">
+                <span class="swatch-code">#FDFCF9</span>
+              </div>
+            </div>
+
+            <div class="palette-meta">
+              <span class="meta-item"><strong>Vibe:</strong> Prestigious, Authoritative, High-Ticket</span>
+              <span class="meta-item"><strong>Best for:</strong> Executive Apps, Luxury Brands, Flagship Portals</span>
+            </div>
+          </div>
+
+          <!-- Palette 2: Imperial Emerald & Onyx (Prestige Tech & Venture) -->
+          <div class="palette-card glass-panel" data-palette="imperial-emerald">
+            <div class="palette-card-header">
+              <div>
+                <span class="palette-tag emerald-tag">💎 PRESTIGE TECH &bull; VENTURE</span>
+                <h3 class="palette-title">Imperial Emerald &amp; Onyx</h3>
+              </div>
+              <button class="palette-apply-btn" data-set-theme="imperial-emerald">Activate Theme</button>
+            </div>
+            
+            <p class="palette-purpose">
+              Deep forest carbon offset by radiant emerald diamond and mint luminescence. Radiates intelligence, wealth creation, and high-precision software mastery.
+            </p>
+
+            <div class="swatches-strip">
+              <div class="swatch-item" style="background: #050807;" data-hex="#050807" title="Onyx Shadow (#050807)">
+                <span class="swatch-code">#050807</span>
+              </div>
+              <div class="swatch-item" style="background: #121c17;" data-hex="#121C17" title="Deep Forest (#121C17)">
+                <span class="swatch-code">#121C17</span>
+              </div>
+              <div class="swatch-item" style="background: #00e599; color: #000;" data-hex="#00E599" title="Imperial Emerald (#00E599)">
+                <span class="swatch-code">#00E599</span>
+              </div>
+              <div class="swatch-item" style="background: #10b981; color: #000;" data-hex="#10B981" title="Jade Green (#10B981)">
+                <span class="swatch-code">#10B981</span>
+              </div>
+              <div class="swatch-item" style="background: #f2fbf6; color: #000;" data-hex="#F2FBF6" title="Mint Frost (#F2FBF6)">
+                <span class="swatch-code">#F2FBF6</span>
+              </div>
+            </div>
+
+            <div class="palette-meta">
+              <span class="meta-item"><strong>Vibe:</strong> High-Caliber, Wealth, Modern Tech</span>
+              <span class="meta-item"><strong>Best for:</strong> Fintech Apps, Venture Capital, AI Platforms</span>
+            </div>
+          </div>
+
+          <!-- Palette 3: Titanium Stealth & Silver (Pure Monolith Studio) -->
+          <div class="palette-card glass-panel" data-palette="titanium-stealth">
+            <div class="palette-card-header">
+              <div>
+                <span class="palette-tag stealth-tag">🪞 MONOLITH &bull; HIGH-CRAFT</span>
+                <h3 class="palette-title">Titanium Stealth &amp; Silver</h3>
+              </div>
+              <button class="palette-apply-btn" data-set-theme="titanium-stealth">Activate Theme</button>
+            </div>
+            
+            <p class="palette-purpose">
+              Pure matte graphite with liquid platinum and brushed titanium accents. Inspired by legendary industrial design houses (Dieter Rams, Teenage Engineering). Zero noise, absolute craft.
+            </p>
+
+            <div class="swatches-strip">
+              <div class="swatch-item" style="background: #070707;" data-hex="#070707" title="Graphite Pitch (#070707)">
+                <span class="swatch-code">#070707</span>
+              </div>
+              <div class="swatch-item" style="background: #1b1b1b;" data-hex="#1B1B1B" title="Matte Titanium (#1B1B1B)">
+                <span class="swatch-code">#1B1B1B</span>
+              </div>
+              <div class="swatch-item" style="background: #d4d4d8; color: #000;" data-hex="#D4D4D8" title="Liquid Silver (#D4D4D8)">
+                <span class="swatch-code">#D4D4D8</span>
+              </div>
+              <div class="swatch-item" style="background: #e4e4e7; color: #000;" data-hex="#E4E4E7" title="Polished Chrome (#E4E4E7)">
+                <span class="swatch-code">#E4E4E7</span>
+              </div>
+              <div class="swatch-item" style="background: #ffffff; color: #000;" data-hex="#FFFFFF" title="Pure White (#FFFFFF)">
+                <span class="swatch-code">#FFFFFF</span>
+              </div>
+            </div>
+
+            <div class="palette-meta">
+              <span class="meta-item"><strong>Vibe:</strong> Timeless, Monolithic, Architectural</span>
+              <span class="meta-item"><strong>Best for:</strong> Awwwards Studios, Hardware UI, Premium Portfolios</span>
+            </div>
+          </div>
+
+          <!-- Palette 4: Kyoto Sapphire & Navy (Architectural Elite) -->
+          <div class="palette-card glass-panel" data-palette="kyoto-sapphire">
+            <div class="palette-card-header">
+              <div>
+                <span class="palette-tag sapphire-tag">🏛️ ARCHITECTURAL &bull; ROYAL</span>
+                <h3 class="palette-title">Kyoto Sapphire &amp; Navy</h3>
+              </div>
+              <button class="palette-apply-btn" data-set-theme="kyoto-sapphire">Activate Theme</button>
+            </div>
+            
+            <p class="palette-purpose">
+              Deep Japanese midnight ink with architectural royal sapphire highlights. Serene, authoritative, and favored by global digital consultancies.
+            </p>
+
+            <div class="swatches-strip">
+              <div class="swatch-item" style="background: #07090e;" data-hex="#07090E" title="Midnight Ink (#07090E)">
+                <span class="swatch-code">#07090E</span>
+              </div>
+              <div class="swatch-item" style="background: #161c2c;" data-hex="#161C2C" title="Sapphire Slate (#161C2C)">
+                <span class="swatch-code">#161C2C</span>
+              </div>
+              <div class="swatch-item" style="background: #3b82f6;" data-hex="#3B82F6" title="Royal Sapphire (#3B82F6)">
+                <span class="swatch-code">#3B82F6</span>
+              </div>
+              <div class="swatch-item" style="background: #60a5fa; color: #000;" data-hex="#60A5FA" title="Cobalt Air (#60A5FA)">
+                <span class="swatch-code">#60A5FA</span>
+              </div>
+              <div class="swatch-item" style="background: #f8fafc; color: #000;" data-hex="#F8FAFC" title="Crisp Platinum (#F8FAFC)">
+                <span class="swatch-code">#F8FAFC</span>
+              </div>
+            </div>
+
+            <div class="palette-meta">
+              <span class="meta-item"><strong>Vibe:</strong> Intellectual, Deep Trust, Corporate Grace</span>
+              <span class="meta-item"><strong>Best for:</strong> Enterprise SaaS, Consultancies, Cloud Security</span>
+            </div>
+          </div>
+
+          <!-- Palette 5: Electric Chroma (Signature Default) -->
+          <div class="palette-card glass-panel" data-palette="electric-chroma">
+            <div class="palette-card-header">
+              <div>
+                <span class="palette-tag studio-tag">⚡ SIGNATURE STUDIO</span>
+                <h3 class="palette-title">Electric Chroma</h3>
+              </div>
+              <button class="palette-apply-btn" data-set-theme="electric-chroma">Activate Theme</button>
+            </div>
+            
+            <p class="palette-purpose">
+              Dark obsidian minimalism balanced with hyper-electric violet and mint. Designed for cutting-edge mobile apps, fintech, and digital creators.
+            </p>
+
+            <div class="swatches-strip">
+              <div class="swatch-item" style="background: #0b0d13;" data-hex="#0B0D13" title="Obsidian Canvas (#0B0D13)">
+                <span class="swatch-code">#0B0D13</span>
+              </div>
+              <div class="swatch-item" style="background: #6366f1;" data-hex="#6366F1" title="Electric Violet (#6366F1)">
+                <span class="swatch-code">#6366F1</span>
+              </div>
+              <div class="swatch-item" style="background: #00f5a0; color: #000;" data-hex="#00F5A0" title="Neon Mint (#00F5A0)">
+                <span class="swatch-code">#00F5A0</span>
+              </div>
+              <div class="swatch-item" style="background: #00d9f5; color: #000;" data-hex="#00D9F5" title="Cyan Spark (#00D9F5)">
+                <span class="swatch-code">#00D9F5</span>
+              </div>
+              <div class="swatch-item" style="background: #f8fafc; color: #000;" data-hex="#F8FAFC" title="Ghost White (#F8FAFC)">
+                <span class="swatch-code">#F8FAFC</span>
+              </div>
+            </div>
+
+            <div class="palette-meta">
+              <span class="meta-item"><strong>Vibe:</strong> High-Tech, Kinetic, Sleek</span>
+              <span class="meta-item"><strong>Best for:</strong> iOS/Android Apps, SaaS, Dark UIs</span>
+            </div>
+          </div>
+
+          <!-- Palette 6: Acid Minimalist -->
+          <div class="palette-card glass-panel" data-palette="acid-minimalist">
+            <div class="palette-card-header">
+              <div>
+                <span class="palette-tag acid-tag">🧪 GEN-Z &bull; VIRAL BOLD</span>
+                <h3 class="palette-title">Acid Minimalist</h3>
+              </div>
+              <button class="palette-apply-btn" data-set-theme="acid-minimalist">Activate Theme</button>
+            </div>
+            
+            <p class="palette-purpose">
+              Swiss-inspired deep carbon offset by an unmistakable electric citron punch. Loud, trend-setting, and unapologetically bold for viral social feeds.
+            </p>
+
+            <div class="swatches-strip">
+              <div class="swatch-item" style="background: #0e0e10;" data-hex="#0E0E10" title="Carbon Base (#0E0E10)">
+                <span class="swatch-code">#0E0E10</span>
+              </div>
+              <div class="swatch-item" style="background: #d2ff00; color: #000;" data-hex="#D2FF00" title="Acid Citron (#D2FF00)">
+                <span class="swatch-code">#D2FF00</span>
+              </div>
+              <div class="swatch-item" style="background: #2563eb;" data-hex="#2563EB" title="Ultramarine (#2563EB)">
+                <span class="swatch-code">#2563EB</span>
+              </div>
+              <div class="swatch-item" style="background: #ff5722;" data-hex="#FF5722" title="Blaze Orange (#FF5722)">
+                <span class="swatch-code">#FF5722</span>
+              </div>
+              <div class="swatch-item" style="background: #ffffff; color: #000;" data-hex="#FFFFFF" title="Pure White (#FFFFFF)">
+                <span class="swatch-code">#FFFFFF</span>
+              </div>
+            </div>
+
+            <div class="palette-meta">
+              <span class="meta-item"><strong>Vibe:</strong> Editorial, Avant-Garde, High Impact</span>
+              <span class="meta-item"><strong>Best for:</strong> TikTok Drops, Fashion, Streetwear, Gen-Z</span>
+            </div>
+          </div>
+
+          <!-- Palette 7: Sunset Mirage -->
+          <div class="palette-card glass-panel" data-palette="sunset-mirage">
+            <div class="palette-card-header">
+              <div>
+                <span class="palette-tag sunset-tag">🌅 AESTHETIC &bull; WARM</span>
+                <h3 class="palette-title">Sunset Mirage</h3>
+              </div>
+              <button class="palette-apply-btn" data-set-theme="sunset-mirage">Activate Theme</button>
+            </div>
+            
+            <p class="palette-purpose">
+              Velvety cosmic plum background paired with warm peach-coral and lilac hues. Highly photogenic, aesthetic, and welcoming for lifestyle brands.
+            </p>
+
+            <div class="swatches-strip">
+              <div class="swatch-item" style="background: #0f0b18;" data-hex="#0F0B18" title="Plum Obsidian (#0F0B18)">
+                <span class="swatch-code">#0F0B18</span>
+              </div>
+              <div class="swatch-item" style="background: #ff6b6b;" data-hex="#FF6B6B" title="Sunset Peach (#FF6B6B)">
+                <span class="swatch-code">#FF6B6B</span>
+              </div>
+              <div class="swatch-item" style="background: #c084fc; color: #000;" data-hex="#C084FC" title="Cosmic Lilac (#C084FC)">
+                <span class="swatch-code">#C084FC</span>
+              </div>
+              <div class="swatch-item" style="background: #fbbf24; color: #000;" data-hex="#FBBF24" title="Amber Sun (#FBBF24)">
+                <span class="swatch-code">#FBBF24</span>
+              </div>
+              <div class="swatch-item" style="background: #fff1f2; color: #000;" data-hex="#FFF1F2" title="Blush White (#FFF1F2)">
+                <span class="swatch-code">#FFF1F2</span>
+              </div>
+            </div>
+
+            <div class="palette-meta">
+              <span class="meta-item"><strong>Vibe:</strong> Lush, Creative, Human-Centric</span>
+              <span class="meta-item"><strong>Best for:</strong> Instagram Grids, D2C Wellness, Creators</span>
+            </div>
+          </div>
+
+          <!-- Palette 8: Nordic Editorial -->
+          <div class="palette-card glass-panel" data-palette="nordic-editorial">
+            <div class="palette-card-header">
+              <div>
+                <span class="palette-tag light-tag">🕊️ LIGHT &bull; CORPORATE SLEEK</span>
+                <h3 class="palette-title">Nordic Editorial</h3>
+              </div>
+              <button class="palette-apply-btn" data-set-theme="nordic-editorial">Activate Theme</button>
+            </div>
+            
+            <p class="palette-purpose">
+              A light studio aesthetic with crisp alabaster paper tones, structured deep indigo typography, and subtle royal blue accentuation.
+            </p>
+
+            <div class="swatches-strip">
+              <div class="swatch-item" style="background: #f9fafb; color: #000; border: 1px solid #ddd;" data-hex="#F9FAFB" title="Alabaster (#F9FAFB)">
+                <span class="swatch-code">#F9FAFB</span>
+              </div>
+              <div class="swatch-item" style="background: #0f172a;" data-hex="#0F172A" title="Deep Indigo (#0F172A)">
+                <span class="swatch-code">#0F172A</span>
+              </div>
+              <div class="swatch-item" style="background: #4f46e5;" data-hex="#4F46E5" title="Royal Iris (#4F46E5)">
+                <span class="swatch-code">#4F46E5</span>
+              </div>
+              <div class="swatch-item" style="background: #0284c7;" data-hex="#0284C7" title="Azure Sky (#0284C7)">
+                <span class="swatch-code">#0284C7</span>
+              </div>
+              <div class="swatch-item" style="background: #e11d48;" data-hex="#E11D48" title="Berry Accent (#E11D48)">
+                <span class="swatch-code">#E11D48</span>
+              </div>
+            </div>
+
+            <div class="palette-meta">
+              <span class="meta-item"><strong>Vibe:</strong> Architectural, Crisp, Executive</span>
+              <span class="meta-item"><strong>Best for:</strong> Enterprise SaaS, B2B Pitch Decks, Web Portals</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Color Tool Helper Box -->
+        <div class="color-tools-bar glass-panel">
+          <div class="tool-info">
+            <span class="tool-icon">💡</span>
+            <div>
+              <strong>Quick Tip:</strong> Click any color swatch above to copy its HEX value directly to your clipboard.
+            </div>
+          </div>
+          <div id="copy-toast" class="copy-toast" aria-live="polite">Copied to clipboard!</div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         TWO CORE SERVICES: APPS & SOCIAL MEDIA
+         ============================================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        
+        <div class="section-badge-center">
+          <span class="badge-icon">✦</span>
+          <span>OUR DUAL POWERHOUSE</span>
+        </div>
+        
+        <h2 class="section-title text-center">
+          Engineered for Retention. <br>
+          <span class="text-gradient">Designed for the Feed.</span>
+        </h2>
+        
+        <p class="section-sub text-center max-w-2xl">
+          Most agencies only understand half the puzzle. We unite product engineers who build obsessive digital applications with creative directors who master viral social algorithms.
+        </p>
+
+        <!-- Service Pillar 1: APPS -->
+        <div class="service-pillar-card glass-panel" id="pillar-apps">
+          <div class="pillar-grid">
+            
+            <div class="pillar-content">
+              <div class="pillar-number">PILLAR 01</div>
+              <div class="pillar-badge app-badge">DIGITAL PRODUCTS &amp; APPS</div>
+              <h3 class="pillar-title">Mobile &amp; Web Applications that Users Actually Love</h3>
+              <p class="pillar-description">
+                From napkin sketches to 5-star App Store ratings. We craft modern, frictionless mobile apps (iOS &amp; Android) and SaaS platforms built with scalable design systems, smooth 60fps micro-interactions, and human ergonomics.
+              </p>
+
+              <div class="features-grid">
+                <div class="feature-item">
+                  <div class="feat-icon">📱</div>
+                  <div>
+                    <h4 class="feat-title">iOS &amp; Android Native UI/UX</h4>
+                    <p class="feat-desc">Human-centered mobile design following Apple Human Interface Guidelines and Google Material 3.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feat-icon">🧩</div>
+                  <div>
+                    <h4 class="feat-title">Design Systems &amp; Tokens</h4>
+                    <p class="feat-desc">Complete Figma component architectures that developers can code without guessing spacing or tokens.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feat-icon">⚡</div>
+                  <div>
+                    <h4 class="feat-title">Interactive Prototypes &amp; User Testing</h4>
+                    <p class="feat-desc">Clickable, animated prototypes tested against target demographic users before single line of code.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feat-icon">💻</div>
+                  <div>
+                    <h4 class="feat-title">SaaS Dashboards &amp; Web Portals</h4>
+                    <p class="feat-desc">Data-dense yet minimalist desktop interfaces that make complex business workflows feel effortless.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pillar-footer">
+                <div class="tech-stack-tags">
+                  <span class="stack-tag">Figma</span>
+                  <span class="stack-tag">SwiftUI Ready</span>
+                  <span class="stack-tag">React Native Ready</span>
+                  <span class="stack-tag">Tailwind UI</span>
+                  <span class="stack-tag">WCAG 2.1 AAA</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive App Experience Sandbox -->
+            <div class="pillar-interactive">
+              <div class="interactive-sandbox glass-panel">
+                <div class="sandbox-header">
+                  <div class="screen-tabs">
+                    <button class="screen-tab active" data-screen="wallet">Crypto/Pay</button>
+                    <button class="screen-tab" data-screen="fitness">Fitness AI</button>
+                    <button class="screen-tab" data-screen="social-app">Creator Hub</button>
+                  </div>
+                  <span class="demo-tag">LIVE INTERACTIVE MOCK</span>
+                </div>
+
+                <div class="sandbox-screen-body" id="interactiveScreenDisplay">
+                  <!-- Dynamic Screen Injected by JS -->
+                  <div class="mock-device-preview">
+                    <div class="device-status-bar">
+                      <span>9:41</span>
+                      <span>5G 􀛨 100%</span>
+                    </div>
+                    <div class="device-dynamic-content">
+                      <div class="card-glow-preview">
+                        <span class="card-badge">ChromaFolks FinTech</span>
+                        <div class="card-num">&bull;&bull;&bull;&bull; 8892</div>
+                        <div class="card-bal">$24,940.00</div>
+                      </div>
+                      <div class="action-grid-3">
+                        <div class="action-circle">⬆️ Send</div>
+                        <div class="action-circle">⬇️ Receive</div>
+                        <div class="action-circle">📊 Stats</div>
+                      </div>
+                      <div class="activity-feed">
+                        <div class="activity-row">
+                          <span class="dot"></span>
+                          <span>Figma Subscription</span>
+                          <strong class="minus">-$45.00</strong>
+                        </div>
+                        <div class="activity-row">
+                          <span class="dot"></span>
+                          <span>Client Payout (Sprint)</span>
+                          <strong class="plus">+$6,500.00</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sandbox-instructions">
+                  <span>✦ Toggle tabs above to view different app archetype layouts designed by our team.</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Service Pillar 2: SOCIAL MEDIA -->
+        <div class="service-pillar-card glass-panel mt-8" id="pillar-social">
+          <div class="pillar-grid pillar-reverse">
+            
+            <div class="pillar-content">
+              <div class="pillar-number">PILLAR 02</div>
+              <div class="pillar-badge social-badge">SOCIAL MEDIA ARCHITECTURE &amp; GROWTH</div>
+              <h3 class="pillar-title">Social Feeds Engineered for Attention &amp; Algorithmic Velocity</h3>
+              <p class="pillar-description">
+                Attention is the modern currency. We take over your brand’s social media footprint across TikTok, Instagram, YouTube Shorts, and LinkedIn—delivering cinematic short-form video, aesthetic grid curation, and audience growth strategies that convert followers into lifelong brand evangelists.
+              </p>
+
+              <div class="features-grid">
+                <div class="feature-item">
+                  <div class="feat-icon">🎬</div>
+                  <div>
+                    <h4 class="feat-title">Short-Form Video Production (Reels &amp; TikTok)</h4>
+                    <p class="feat-desc">High-retention 3-second visual hooks, dynamic kinetic typography, and audio trend synchronization.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feat-icon">📐</div>
+                  <div>
+                    <h4 class="feat-title">Visual Grid Architecture &amp; Curation</h4>
+                    <p class="feat-desc">Editorial multi-grid layouts, consistent color grading, custom carousel templates, and signature iconography.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feat-icon">📊</div>
+                  <div>
+                    <h4 class="feat-title">Full Channel Management &amp; Content Calendar</h4>
+                    <p class="feat-desc">Hands-off publishing, caption copy engineering, hashtag optimization, and community engagement workflows.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feat-icon">🚀</div>
+                  <div>
+                    <h4 class="feat-title">Gen-Z &amp; Young Professional Targeting</h4>
+                    <p class="feat-desc">Memetic fluency, cultural relevance, and authentic storytelling that avoids feeling like dry corporate ads.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pillar-footer">
+                <div class="tech-stack-tags">
+                  <span class="stack-tag">After Effects</span>
+                  <span class="stack-tag">CapCut Pro</span>
+                  <span class="stack-tag">Premiere Pro</span>
+                  <span class="stack-tag">Meta Business Suite</span>
+                  <span class="stack-tag">Sprout Social</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Feed Preview Simulator -->
+            <div class="pillar-interactive">
+              <div class="social-grid-simulator glass-panel">
+                <div class="simulator-header">
+                  <div class="profile-summary">
+                    <div class="profile-pic">
+                      <img src="bird-light.png" alt="CF" class="dark-theme-logo">
+                      <img src="bird-dark.png" alt="CF" class="light-theme-logo">
+                    </div>
+                    <div>
+                      <div class="profile-handle">@chromafolks.studio <span class="verified-badge">✓</span></div>
+                      <div class="profile-stats"><strong>142k</strong> followers &bull; <strong>3.2M</strong> reach</div>
+                    </div>
+                  </div>
+                  <span class="feed-badge">AESTHETIC GRID</span>
+                </div>
+
+                <!-- 6-post visual grid -->
+                <div class="social-feed-grid">
+                  <div class="grid-post post-1">
+                    <span class="post-type-icon">▶</span>
+                    <div class="post-hover-stats">❤️ 42k 💬 890</div>
+                    <div class="post-caption-tag">"UI Motion Secret"</div>
+                  </div>
+                  <div class="grid-post post-2">
+                    <span class="post-type-icon">⧉</span>
+                    <div class="post-hover-stats">❤️ 28k 💬 412</div>
+                    <div class="post-caption-tag">"Color Theory 2026"</div>
+                  </div>
+                  <div class="grid-post post-3">
+                    <span class="post-type-icon">▶</span>
+                    <div class="post-hover-stats">❤️ 95k 💬 1.4k</div>
+                    <div class="post-caption-tag">"Viral App Breakdown"</div>
+                  </div>
+                  <div class="grid-post post-4">
+                    <span class="post-type-icon">⧉</span>
+                    <div class="post-hover-stats">❤️ 19k 💬 230</div>
+                    <div class="post-caption-tag">"Figma Shortcuts"</div>
+                  </div>
+                  <div class="grid-post post-5">
+                    <span class="post-type-icon">▶</span>
+                    <div class="post-hover-stats">❤️ 63k 💬 790</div>
+                    <div class="post-caption-tag">"From 0 to 1M Views"</div>
+                  </div>
+                  <div class="grid-post post-6">
+                    <span class="post-type-icon">★</span>
+                    <div class="post-hover-stats">❤️ 51k 💬 880</div>
+                    <div class="post-caption-tag">"Brand Redesign"</div>
+                  </div>
+                </div>
+
+                <div class="simulator-footer-bar">
+                  <span>✦ 100% bespoke motion templates designed to match your brand’s active color palette.</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         SELECTED WORKS / PORTFOLIO WITH MODAL
+         ============================================== -->
+    <section class="section portfolio-section" id="work">
+      <div class="container">
+        
+        <div class="section-head-split">
+          <div>
+            <div class="section-badge-left">
+              <span class="badge-icon">💼</span>
+              <span>CASE STUDIES &amp; CRAFT</span>
+            </div>
+            <h2 class="section-title">
+              Selected Work That <br>
+              <span class="text-gradient">Moved the Needle.</span>
+            </h2>
+          </div>
+
+          <!-- Project Filter Pills -->
+          <div class="portfolio-filter-group" role="tablist">
+            <button class="filter-pill active" data-filter="all">All Projects (6)</button>
+            <button class="filter-pill" data-filter="apps">Mobile &amp; Web Apps</button>
+            <button class="filter-pill" data-filter="social">Social Media Growth</button>
+            <button class="filter-pill" data-filter="branding">Brand Identity</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsContainer">
+          
+          <!-- Project 1: Velox Pay -->
+          <article class="project-card glass-panel" data-category="apps" data-project-id="velox">
+            <div class="project-thumb thumb-velox">
+              <div class="thumb-badge-floating">FINTECH APP</div>
+              <div class="thumb-art">
+                <div class="mock-phone-small">
+                  <div class="app-screen-mock">
+                    <span class="chip-green">+$4,290.00</span>
+                    <div class="mock-bars">
+                      <span style="height: 40%"></span>
+                      <span style="height: 70%"></span>
+                      <span style="height: 90%"></span>
+                      <span style="height: 60%"></span>
+                      <span style="height: 100%"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="ptag">iOS App</span>
+                <span class="ptag">Design System</span>
+                <span class="ptag">Micro-interactions</span>
+              </div>
+              <h3 class="project-title">Velox Pay — Frictionless Global Wallet</h3>
+              <p class="project-desc">
+                Architected a modern minimalist mobile wallet for digital nomads and creators. Redesigned onboarding flow that lowered abandonment by 42%.
+              </p>
+              <div class="project-metric-row">
+                <div class="pmetric"><strong>4.9★</strong> (38k reviews)</div>
+                <div class="pmetric"><strong>+140%</strong> DAU growth</div>
+              </div>
+              <button class="btn-link view-case-study" data-open-modal="velox">
+                <span>View Case Study</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2: Aura Glow Social Campaign -->
+          <article class="project-card glass-panel" data-category="social" data-project-id="aura">
+            <div class="project-thumb thumb-aura">
+              <div class="thumb-badge-floating">SOCIAL MEDIA ENGINE</div>
+              <div class="thumb-art">
+                <div class="mock-reel-grid">
+                  <div class="reel-item">14M views</div>
+                  <div class="reel-item">8.2M views</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="ptag">TikTok Strategy</span>
+                <span class="ptag">Reels Direction</span>
+                <span class="ptag">Grid Curation</span>
+              </div>
+              <h3 class="project-title">Aura Botanicals — Viral DTC Social Overhaul</h3>
+              <p class="project-desc">
+                Took an emerging skincare brand from 1,200 to 240,000 engaged followers in 90 days with hyper-aesthetic UGC templates and dynamic hook video editing.
+              </p>
+              <div class="project-metric-row">
+                <div class="pmetric"><strong>240K+</strong> New Followers</div>
+                <div class="pmetric"><strong>$1.2M</strong> Influenced Sales</div>
+              </div>
+              <button class="btn-link view-case-study" data-open-modal="aura">
+                <span>View Case Study</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3: Kinetix AI -->
+          <article class="project-card glass-panel" data-category="apps" data-project-id="kinetix">
+            <div class="project-thumb thumb-kinetix">
+              <div class="thumb-badge-floating">HEALTH &amp; FITNESS</div>
+              <div class="thumb-art">
+                <div class="mock-rings">
+                  <div class="ring r-1"></div>
+                  <div class="ring r-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="ptag">Mobile App</span>
+                <span class="ptag">WatchOS</span>
+                <span class="ptag">Haptics</span>
+              </div>
+              <h3 class="project-title">Kinetix AI — Spatial Motion Coach</h3>
+              <p class="project-desc">
+                Crafted the user interface and fluid visual feedback loop for an AI-powered fitness app with real-time pose tracking and haptic milestone celebrations.
+              </p>
+              <div class="project-metric-row">
+                <div class="pmetric"><strong>#1</strong> Health App Trend</div>
+                <div class="pmetric"><strong>88%</strong> 30-Day Retention</div>
+              </div>
+              <button class="btn-link view-case-study" data-open-modal="kinetix">
+                <span>View Case Study</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4: Drift Studio Social -->
+          <article class="project-card glass-panel" data-category="social" data-project-id="drift">
+            <div class="project-thumb thumb-drift">
+              <div class="thumb-badge-floating">GEN-Z STREETWEAR</div>
+              <div class="thumb-art">
+                <div class="streetwear-tag">SOLD OUT IN 4 MIN</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="ptag">Short-Form Video</span>
+                <span class="ptag">Drop Campaign</span>
+                <span class="ptag">Sound Design</span>
+              </div>
+              <h3 class="project-title">Drift Supply — Hype-Drop Social Rollout</h3>
+              <p class="project-desc">
+                Directed a 14-day mysterious countdown campaign across TikTok and Instagram with kinetic typography and behind-the-scenes factory footage.
+              </p>
+              <div class="project-metric-row">
+                <div class="pmetric"><strong>4 Mins</strong> Sold Out Drop</div>
+                <div class="pmetric"><strong>320K</strong> Waitlist Signups</div>
+              </div>
+              <button class="btn-link view-case-study" data-open-modal="drift">
+                <span>View Case Study</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 5: Synthetix AI Dashboard -->
+          <article class="project-card glass-panel" data-category="apps" data-project-id="synthetix">
+            <div class="project-thumb thumb-synthetix">
+              <div class="thumb-badge-floating">SAAS DASHBOARD</div>
+              <div class="thumb-art">
+                <div class="mock-dash-lines">
+                  <div class="dash-line w-full"></div>
+                  <div class="dash-line w-80"></div>
+                  <div class="dash-line w-60"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="ptag">Web App</span>
+                <span class="ptag">Enterprise UX</span>
+                <span class="ptag">Component System</span>
+              </div>
+              <h3 class="project-title">Synthetix AI — Autonomous Command Center</h3>
+              <p class="project-desc">
+                Clean, dark-mode web application interface enabling engineering teams to orchestrate, monitor, and debug multi-agent AI pipelines.
+              </p>
+              <div class="project-metric-row">
+                <div class="pmetric"><strong>3.8x</strong> Faster Task Flow</div>
+                <div class="pmetric"><strong>$18M</strong> Series A Fuel</div>
+              </div>
+              <button class="btn-link view-case-study" data-open-modal="synthetix">
+                <span>View Case Study</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 6: ChromaFolks Brand System -->
+          <article class="project-card glass-panel" data-category="branding" data-project-id="chroma-identity">
+            <div class="project-thumb thumb-identity">
+              <div class="thumb-badge-floating">STUDIO IDENTITY</div>
+              <div class="thumb-art">
+                <img src="bird-light.png" alt="Chroma Bird" class="thumb-bird dark-theme-logo">
+                <img src="bird-dark.png" alt="Chroma Bird" class="thumb-bird light-theme-logo">
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="ptag">Visual Identity</span>
+                <span class="ptag">Iconography</span>
+                <span class="ptag">Brand Guidelines</span>
+              </div>
+              <h3 class="project-title">ChromaFolks &amp; Co — Studio Brand Architecture</h3>
+              <p class="project-desc">
+                Our own foundational brand identity system: the aerodynamic bird mark representing agility and vision, paired with adaptive chromatic palettes.
+              </p>
+              <div class="project-metric-row">
+                <div class="pmetric"><strong>4 Color</strong> Palettes</div>
+                <div class="pmetric"><strong>100%</strong> Scalable SVG</div>
+              </div>
+              <button class="btn-link view-case-study" data-open-modal="chroma-identity">
+                <span>View Case Study</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         OUR 4-STEP SPRINT PROCESS
+         ============================================== -->
+    <section class="section process-section" id="process">
+      <div class="container">
+        
+        <div class="section-badge-center">
+          <span class="badge-icon">⚡</span>
+          <span>HOW WE EXECUTE</span>
+        </div>
+        
+        <h2 class="section-title text-center">
+          The Chroma Sprint Method. <br>
+          <span class="text-gradient">No Bloat. No 6-Month Delays.</span>
+        </h2>
+        
+        <p class="section-sub text-center max-w-2xl">
+          We operate in rapid, high-intensity design cycles. Every week delivers tangible, interactive artifacts you can test on your phone or launch to your audience.
+        </p>
+
+        <div class="process-steps-grid">
+          
+          <div class="process-step-card glass-panel">
+            <div class="step-num">01</div>
+            <h3 class="step-title">Deep Immersion &amp; Vibe Sync</h3>
+            <p class="step-desc">
+              We audit your competitors, dissect your target audience's content consumption patterns, and align on visual moodboards and technical scope in 48 hours.
+            </p>
+            <div class="step-deliverable">
+              <span class="del-label">Deliverable:</span>
+              <span class="del-val">Vibe Deck, Scope Spec &amp; Persona Architecture</span>
+            </div>
+          </div>
+
+          <div class="process-step-card glass-panel">
+            <div class="step-num">02</div>
+            <h3 class="step-title">Architecture &amp; Rapid Wireframing</h3>
+            <p class="step-desc">
+              For apps: UX wireframes, user flows, and tap-through structure. For social: video content pillars, scripting templates, and hook formulas.
+            </p>
+            <div class="step-deliverable">
+              <span class="del-label">Deliverable:</span>
+              <span class="del-val">Clickable Low-Fi Prototype &amp; 30-Day Content Plan</span>
+            </div>
+          </div>
+
+          <div class="process-step-card glass-panel">
+            <div class="step-num">03</div>
+            <h3 class="step-title">High-Chroma Polish &amp; Motion</h3>
+            <p class="step-desc">
+              We apply our signature color system, custom typography, micro-interactions, 60fps animations, and produce ready-to-air high-retention video cuts.
+            </p>
+            <div class="step-deliverable">
+              <span class="del-label">Deliverable:</span>
+              <span class="del-val">Full High-Fidelity UI Screens &amp; Rendered Reels/TikToks</span>
+            </div>
+          </div>
+
+          <div class="process-step-card glass-panel">
+            <div class="step-num">04</div>
+            <h3 class="step-title">Handoff, Launch &amp; Exponential Scale</h3>
+            <p class="step-desc">
+              Developer-ready Figma tokens, asset exports, design specs, and an ongoing social growth optimization cadence to scale your metrics.
+            </p>
+            <div class="step-deliverable">
+              <span class="del-label">Deliverable:</span>
+              <span class="del-val">Dev-Ready Design System &amp; Live Social Publishing</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         INTERACTIVE PRICING & PROJECT CALCULATOR
+         ============================================== -->
+    <section class="section pricing-section" id="pricing">
+      <div class="container">
+        
+        <div class="section-badge-center">
+          <span class="badge-icon">💎</span>
+          <span>TRANSPARENT ENGAGEMENTS</span>
+        </div>
+        
+        <h2 class="section-title text-center">
+          Predictable Investments. <br>
+          <span class="text-gradient">Uncompromising Quality.</span>
+        </h2>
+        
+        <p class="section-sub text-center max-w-2xl">
+          Choose a turnkey sprint package or use our interactive calculator below to tailor a custom scope for your mobile app or social media roadmap.
+        </p>
+
+        <!-- Pricing Cards Grid -->
+        <div class="pricing-cards-grid">
+          
+          <!-- Package 1: Social Media Growth Engine -->
+          <div class="pricing-card glass-panel">
+            <div class="pkg-header">
+              <span class="pkg-badge">POPULAR FOR CREATORS &amp; BRANDS</span>
+              <h3 class="pkg-name">Social Media Growth Engine</h3>
+              <p class="pkg-tagline">Hands-off viral video production &amp; aesthetic feed curation.</p>
+              <div class="pkg-price-row">
+                <span class="currency">$</span>
+                <span class="price">2,850</span>
+                <span class="period">/ month</span>
+              </div>
+            </div>
+
+            <ul class="pkg-features">
+              <li><span class="chk">✓</span> <strong>16 High-Retention Reels / TikToks</strong> per month</li>
+              <li><span class="chk">✓</span> Complete Visual Grid Curation &amp; Carousel Design</li>
+              <li><span class="chk">✓</span> Copywriting, Hook Scripting &amp; Audio Trend Research</li>
+              <li><span class="chk">✓</span> Dedicated Social Creative Director</li>
+              <li><span class="chk">✓</span> Monthly Performance &amp; Analytics Review</li>
+              <li><span class="chk">✓</span> Turnaround: Continuous 48h Video Delivery</li>
+            </ul>
+
+            <button class="btn btn-secondary w-full select-plan-btn" data-plan="Social Media Growth Engine">
+              Select Social Engine
+            </button>
+          </div>
+
+          <!-- Package 2: The App MVP Sprint -->
+          <div class="pricing-card glass-panel featured-pricing">
+            <div class="popular-ribbon">MOST POPULAR SPRINT</div>
+            <div class="pkg-header">
+              <span class="pkg-badge app-badge">FOR STARTUPS &amp; SCALE-UPS</span>
+              <h3 class="pkg-name">The App MVP Sprint</h3>
+              <p class="pkg-tagline">Complete iOS/Android or Web App UI/UX in 14 business days.</p>
+              <div class="pkg-price-row">
+                <span class="currency">$</span>
+                <span class="price">5,900</span>
+                <span class="period">one-time</span>
+              </div>
+            </div>
+
+            <ul class="pkg-features">
+              <li><span class="chk">✓</span> <strong>Full App UI/UX Design</strong> (Up to 18 screens)</li>
+              <li><span class="chk">✓</span> Clickable Interactive Figma Prototype</li>
+              <li><span class="chk">✓</span> Complete Design System, Typography &amp; Color Tokens</li>
+              <li><span class="chk">✓</span> Developer Handoff Specs &amp; Asset Bundle</li>
+              <li><span class="chk">✓</span> App Store &amp; Google Play Screenshot Showcase Kit</li>
+              <li><span class="chk">✓</span> 2 Revisions Sprints Included</li>
+            </ul>
+
+            <button class="btn btn-primary w-full select-plan-btn" data-plan="The App MVP Sprint">
+              Book App MVP Sprint
+            </button>
+          </div>
+
+          <!-- Package 3: Full Chroma Studio Retainer -->
+          <div class="pricing-card glass-panel">
+            <div class="pkg-header">
+              <span class="pkg-badge">ALL-IN-ONE POWERHOUSE</span>
+              <h3 class="pkg-name">Full Chroma Retainer</h3>
+              <p class="pkg-tagline">Your dedicated fractional design &amp; social growth department.</p>
+              <div class="pkg-price-row">
+                <span class="currency">$</span>
+                <span class="price">7,900</span>
+                <span class="period">/ month</span>
+              </div>
+            </div>
+
+            <ul class="pkg-features">
+              <li><span class="chk">✓</span> <strong>Both App Design + Social Management</strong></li>
+              <li><span class="chk">✓</span> Unlimited Design Requests &amp; Rapid Revisions</li>
+              <li><span class="chk">✓</span> Weekly Video Batches &amp; App Feature Sprints</li>
+              <li><span class="chk">✓</span> Direct Slack / Discord Channel with Senior Leads</li>
+              <li><span class="chk">✓</span> Priority Turnaround (24-48 Hours)</li>
+              <li><span class="chk">✓</span> Pause or Cancel Anytime</li>
+            </ul>
+
+            <button class="btn btn-secondary w-full select-plan-btn" data-plan="Full Chroma Retainer">
+              Join Studio Retainer
+            </button>
+          </div>
+
+        </div>
+
+
+        <!-- Interactive Project Scope & Budget Estimator -->
+        <div class="scope-calculator-wrapper glass-panel mt-12">
+          <div class="calc-header">
+            <div>
+              <span class="calc-badge">INTERACTIVE ESTIMATOR</span>
+              <h3 class="calc-title">Customize Your Project Scope</h3>
+              <p class="calc-sub">Select the exact services you need to estimate timing &amp; budget immediately.</p>
+            </div>
+            <div class="calc-total-box">
+              <div class="total-label">Estimated Investment</div>
+              <div class="total-price" id="calcPriceDisplay">$5,900</div>
+              <div class="total-timeline" id="calcTimeDisplay">Approx. 2-3 Weeks Delivery</div>
+            </div>
+          </div>
+
+          <div class="calc-options-grid">
+            
+            <div class="calc-group">
+              <h4 class="calc-group-title">1. App &amp; Product Design Services</h4>
+              <label class="calc-checkbox-label">
+                <input type="checkbox" class="calc-check" data-cost="3400" data-days="8" checked>
+                <div class="check-box-custom"></div>
+                <div class="check-text">
+                  <span class="check-name">Mobile App UI/UX (iOS &amp; Android)</span>
+                  <span class="check-price">+$3,400</span>
+                </div>
+              </label>
+
+              <label class="calc-checkbox-label">
+                <input type="checkbox" class="calc-check" data-cost="2500" data-days="6" checked>
+                <div class="check-box-custom"></div>
+                <div class="check-text">
+                  <span class="check-name">Design System &amp; Component Token Library</span>
+                  <span class="check-price">+$2,500</span>
+                </div>
+              </label>
+
+              <label class="calc-checkbox-label">
+                <input type="checkbox" class="calc-check" data-cost="1800" data-days="4">
+                <div class="check-box-custom"></div>
+                <div class="check-text">
+                  <span class="check-name">Interactive High-Fidelity Micro-Prototypes</span>
+                  <span class="check-price">+$1,800</span>
+                </div>
+              </label>
+            </div>
+
+            <div class="calc-group">
+              <h4 class="calc-group-title">2. Social Media &amp; Content Architecture</h4>
+              <label class="calc-checkbox-label">
+                <input type="checkbox" class="calc-check" data-cost="1900" data-days="5">
+                <div class="check-box-custom"></div>
+                <div class="check-text">
+                  <span class="check-name">12x Viral Short-Form Video Edits (Reels/TikTok)</span>
+                  <span class="check-price">+$1,900</span>
+                </div>
+              </label>
+
+              <label class="calc-checkbox-label">
+                <input type="checkbox" class="calc-check" data-cost="1200" data-days="3">
+                <div class="check-box-custom"></div>
+                <div class="check-text">
+                  <span class="check-name">Aesthetic Instagram Grid Template System (18 Posts)</span>
+                  <span class="check-price">+$1,200</span>
+                </div>
+              </label>
+
+              <label class="calc-checkbox-label">
+                <input type="checkbox" class="calc-check" data-cost="1400" data-days="4">
+                <div class="check-box-custom"></div>
+                <div class="check-text">
+                  <span class="check-name">Omnichannel 30-Day Growth Content Strategy</span>
+                  <span class="check-price">+$1,400</span>
+                </div>
+              </label>
+            </div>
+
+          </div>
+
+          <div class="calc-footer-action">
+            <button class="btn btn-primary" id="applyEstimateToContact">
+              <span>Apply Scope &amp; Book Discovery Call</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         ABOUT STUDIO & FOUNDER PHILOSOPHY
+         ============================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          
+          <div class="about-imagery">
+            <div class="brand-crest-card glass-panel">
+              <div class="crest-bird-box">
+                <img src="bird-light.png" alt="ChromaFolks Emblem" class="crest-bird-img dark-theme-logo">
+                <img src="bird-dark.png" alt="ChromaFolks Emblem" class="crest-bird-img light-theme-logo">
+              </div>
+              <div class="crest-text-block">
+                <h3 class="crest-title">ChromaFolks &amp; Co</h3>
+                <p class="crest-subtitle">Designing &amp; Creative Studio</p>
+                <div class="crest-pills">
+                  <span>✦ Modern</span>
+                  <span>✦ Minimalist</span>
+                  <span>✦ Forward-Looking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-narrative">
+            <div class="section-badge-left">
+              <span class="badge-icon">🕊️</span>
+              <span>THE STUDIO IDENTITY</span>
+            </div>
+
+            <h2 class="section-title">
+              Crafted for Visionaries Who Refuse to Look Ordinary.
+            </h2>
+
+            <p class="about-p">
+              The name <strong>ChromaFolks &amp; Co</strong> represents a deliberate duality. 
+              <strong>Chroma</strong> embodies the vibrant spectrum of creativity, bold color theory, and digital vitality. 
+              <strong>Folks</strong> anchors our studio in deep human empathy, collaboration, and cultural intimacy with the young generation shaping tomorrow’s digital landscape.
+            </p>
+
+            <p class="about-p">
+              Our bird emblem symbolizes aerodynamic agility, high-altitude perspective, and seamless momentum. Whether we are architecting complex mobile app UX or choreographing viral social media motion, our ethos remains constant: <em>Obsessive minimalism, zero friction, and unmistakable chromatic personality.</em>
+            </p>
+
+            <div class="about-values-list">
+              <div class="val-card">
+                <div class="val-num">01</div>
+                <div>
+                  <strong>No Cookie-Cutter Templates</strong>
+                  <p>Every single layout, icon, motion curve, and palette is built bespoke for your brand voice.</p>
+                </div>
+              </div>
+
+              <div class="val-card">
+                <div class="val-num">02</div>
+                <div>
+                  <strong>Engineered for Mobile-First Generations</strong>
+                  <p>Young founders and consumers live on their smartphones. We build for thumb ergonomics and instant dopamine.</p>
+                </div>
+              </div>
+
+              <div class="val-card">
+                <div class="val-num">03</div>
+                <div>
+                  <strong>Cross-Disciplinary Synergy</strong>
+                  <p>Your app UX informs your social narrative, and your social feedback directly refines your product UX.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         TESTIMONIALS / PROOF WALL
+         ============================================== -->
+    <section class="section testimonials-section">
+      <div class="container">
+        
+        <div class="section-badge-center">
+          <span class="badge-icon">💬</span>
+          <span>FOUNDER TESTIMONIALS</span>
+        </div>
+        
+        <h2 class="section-title text-center">
+          Trusted by Trailblazing Teams.
+        </h2>
+
+        <div class="testimonials-grid mt-10">
+          
+          <div class="testimonial-card glass-panel">
+            <div class="quote-stars">★★★★★</div>
+            <p class="quote-text">
+              “ChromaFolks completely rebuilt our iOS app in a 2-week sprint. Our conversion rate increased by 65% in the first month. They actually understand what Gen-Z users care about.”
+            </p>
+            <div class="quotee-info">
+              <div class="quotee-avatar">MS</div>
+              <div>
+                <strong class="quotee-name">Maya Sterling</strong>
+                <span class="quotee-role">Founder &amp; CEO, Velox Pay</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass-panel">
+            <div class="quote-stars">★★★★★</div>
+            <p class="quote-text">
+              “Our Instagram was dead until ChromaFolks took over our creative direction and Reels production. We hit 12 million organic views in 60 days. They are the cheat code for modern social growth.”
+            </p>
+            <div class="quotee-info">
+              <div class="quotee-avatar">DL</div>
+              <div>
+                <strong class="quotee-name">Devin Lin</strong>
+                <span class="quotee-role">Head of Brand, Drift Supply</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass-panel">
+            <div class="quote-stars">★★★★★</div>
+            <p class="quote-text">
+              “The color palette systems and design tokens they established saved our engineering team at least 4 months of guesswork. Unbelievable eye for detail and minimal elegance.”
+            </p>
+            <div class="quotee-info">
+              <div class="quotee-avatar">ER</div>
+              <div>
+                <strong class="quotee-name">Elena Rostova</strong>
+                <span class="quotee-role">VP Product, Synthetix AI</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         CONTACT / PROJECT DISCOVERY SPRINT FORM
+         ============================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="contact-card-box glass-panel">
+          <div class="contact-grid">
+            
+            <div class="contact-info-col">
+              <div class="section-badge-left">
+                <span class="badge-icon">🚀</span>
+                <span>LET'S CREATE SOMETHING ICONIC</span>
+              </div>
+
+              <h2 class="contact-heading">
+                Ready to elevate your <span class="text-gradient">App</span> &amp; ignite your <span class="text-gradient-alt">Socials</span>?
+              </h2>
+
+              <p class="contact-subtext">
+                Tell us about your venture. We review inquiries within 24 hours and provide an initial scope breakdown and moodboard preview.
+              </p>
+
+              <div class="contact-highlights">
+                <div class="ch-item">
+                  <span class="ch-icon">⚡</span>
+                  <div>
+                    <strong>24-Hour Sprint Assessment</strong>
+                    <p>Direct reply from our founding design partners.</p>
+                  </div>
+                </div>
+                <div class="ch-item">
+                  <span class="ch-icon">🔒</span>
+                  <div>
+                    <strong>NDA First Policy</strong>
+                    <p>Your intellectual property is protected before conversation.</p>
+                  </div>
+                </div>
+                <div class="ch-item">
+                  <span class="ch-icon">📍</span>
+                  <div>
+                    <strong>Global Studio</strong>
+                    <p>Operating synchronously across US, Europe, and Asia timezones.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="direct-email-box">
+                <span class="email-label">Direct Studio Email:</span>
+                <a href="mailto:hello@chromafolks.co" class="email-link">hello@chromafolks.co</a>
+              </div>
+            </div>
+
+            <!-- Interactive Multi-Step Form -->
+            <div class="contact-form-col">
+              <form id="projectInquiryForm" class="inquiry-form" novalidate>
+                
+                <div class="form-step">
+                  <label class="form-label">What service pillars do you require?</label>
+                  <div class="service-pill-selector">
+                    <button type="button" class="form-pill-btn active" data-val="both">Apps + Social Media</button>
+                    <button type="button" class="form-pill-btn" data-val="apps">Mobile/Web App Only</button>
+                    <button type="button" class="form-pill-btn" data-val="social">Social Media Only</button>
+                    <button type="button" class="form-pill-btn" data-val="branding">Brand Identity</button>
+                  </div>
+                  <input type="hidden" name="selected_services" id="selectedServicesInput" value="both">
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="clientName" class="form-label">Your Name *</label>
+                    <input type="text" id="clientName" name="name" class="form-input" placeholder="e.g. Alex Mercer" required>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="clientEmail" class="form-label">Business Email *</label>
+                    <input type="email" id="clientEmail" name="email" class="form-input" placeholder="alex@company.com" required>
+                  </div>
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="clientCompany" class="form-label">Company / Brand Name</label>
+                    <input type="text" id="clientCompany" name="company" class="form-input" placeholder="e.g. Nova Labs">
+                  </div>
+
+                  <div class="form-field">
+                    <label for="clientBudget" class="form-label">Estimated Budget</label>
+                    <select id="clientBudget" name="budget" class="form-input">
+                      <option value="$3,000 - $6,000">$3,000 – $6,000 (Sprint MVP)</option>
+                      <option value="$6,000 - $12,000" selected>$6,000 – $12,000 (Full Scope)</option>
+                      <option value="$12,000 - $25,000+">$12,000 – $25,000+ (Scale / Retainer)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="clientDetails" class="form-label">Project Overview &amp; Goals *</label>
+                  <textarea id="clientDetails" name="details" rows="4" class="form-input" placeholder="Tell us about your app idea, current social media presence, timeline, and what success looks like..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-full submit-btn">
+                  <span>Send Project Inquiry</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                </button>
+
+                <div id="formFeedback" class="form-feedback-message" style="display: none;"></div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================
+       CASE STUDY DETAIL MODAL
+       ============================================== -->
+  <div class="modal-overlay" id="caseStudyModal" aria-hidden="true" role="dialog">
+    <div class="modal-container glass-panel">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="modalDynamicBody">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       FOOTER
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="brand-identity">
+            <img src="logo-light.png" alt="ChromaFolks & Co" class="brand-logo-img dark-theme-logo">
+            <img src="logo-dark.png" alt="ChromaFolks & Co" class="brand-logo-img light-theme-logo">
+            <div class="brand-name-group">
+              <span class="brand-name">ChromaFolks</span>
+              <span class="brand-sub">&amp; Co Studio</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Designing &amp; creative studio crafting high-impact mobile apps and magnetic social media for the next generation of business.
+          </p>
+          <div class="footer-badge-line">
+            <span>✦ Modern &bull; Minimalist &bull; High-Chroma</span>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Mobile App UI/UX</a></li>
+            <li><a href="#services">Web Apps &amp; SaaS</a></li>
+            <li><a href="#services">Social Media Handling</a></li>
+            <li><a href="#services">Short-Form Video (Reels)</a></li>
+            <li><a href="#services">Design Systems</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Studio</h4>
+          <ul class="footer-links">
+            <li><a href="#work">Selected Work</a></li>
+            <li><a href="#palette-lab">Color Palettes Lab</a></li>
+            <li><a href="#process">Sprint Process</a></li>
+            <li><a href="#pricing">Pricing &amp; Packages</a></li>
+            <li><a href="#about">About ChromaFolks</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram &bull; @chromafolks</a></li>
+            <li><a href="https://tiktok.com" target="_blank" rel="noopener">TikTok &bull; @chromafolks</a></li>
+            <li><a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble &bull; ChromaFolks</a></li>
+            <li><a href="https://x.com" target="_blank" rel="noopener">X (Twitter) &bull; @chromafolks</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn &bull; ChromaFolks &amp; Co</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright-text">
+          &copy; 2026 ChromaFolks &amp; Co. All rights reserved. Designed with obsessive craft.
+        </div>
+        <div class="footer-meta-links">
+          <a href="#palette-lab">Active: <span id="footerPaletteDisplay">Caviar &amp; Champagne Gold</span></a>
+          <span class="dot-sep">&bull;</span>
+          <a href="#hero">Back to top ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
